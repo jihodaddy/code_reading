@@ -17,4 +17,6 @@
 ## 목표
 - 하루 30분씩 읽어본 코드 정리하기
 
+
+## 시작
 [코드 읽는 방법](https://github.com/jihodaddy/code_reading/blob/c0cad3c6e2c888167a614d48d4bd993c871ec351/code_reading/code_reading.md)

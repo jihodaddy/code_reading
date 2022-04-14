@@ -20,3 +20,4 @@
 
 ## 시작
 ### [코드 읽는 방법](https://github.com/jihodaddy/code_reading/blob/c0cad3c6e2c888167a614d48d4bd993c871ec351/code_reading/code_reading.md)
+### [자바 클린코딩 팁](https://github.com/jihodaddy/code_reading/blob/9363c44d957f02e1ee4f12dfbdc269dae66b30de/code_reading/java_clean_coding.md)

@@ -6,8 +6,8 @@
     - 메서드에서의 변수(지역변수) : 초기화 안하면 에러 발생
   
 ### json 데이터 추출시 오류(오류메세지: java.util.LinkedHashMap cannot be cast to List..)
-    - Response되는 JSON 데이터를 사용하기 편한 형태로 변경하기 위해서는   
-      JSON 데이터를 deserialization(역직렬화) 하여 pojo 형태의 사용하기 편한 객체화 해야 한다.
+- Response되는 JSON 데이터를 사용하기 편한 형태로 변경하기 위해서는   
+  JSON 데이터를 deserialization(역직렬화) 하여 pojo 형태의 사용하기 편한 객체화 해야 한다.
 
 ```java
     JSONParser json = new JSONParser();

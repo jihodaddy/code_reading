@@ -60,4 +60,4 @@ public class Member implements Serializable {
    private transient String password;  
 }
 ```
-    - 출력시 transient 변수는 null 값 출력
+    - 출력시 transient 변수 는 null 값 출력

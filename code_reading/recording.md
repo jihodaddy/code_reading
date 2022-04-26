@@ -35,16 +35,29 @@
 #### 상속(is-a)   
 
     부모 클래스가 Serializable을 구현하면
-        - 자식 클래스는 항상 직렬화가 가능하다.
-        - 자식 클래스를 직렬화하면 부모 클래스의 인스턴스 변수도 함께 직렬화된다.   
+        - 자식 클래스는 항상 직렬화가 가능.
+        - 자식 클래스를 직렬화하면 부모 클래스의 인스턴스 변수도 함께 직렬화.   
 
     자식 클래스만 Serializable을 구현하면
     - 부모 클래스의 인스턴스 변수는 직렬화되지 않는다.
-    - 부모 클래스의 인스턴스 변수도 직렬화 대상에 포함하려면 두 가지 방법이 있다.
-        1. 조상 클래스가 Serializable을 구현한다.
-        2. 직렬화 코드를 직접 구현한다.
+    - 부모 클래스의 인스턴스 변수도 직렬화 대상에 포함하려면 두 가지 방법
+        1. 조상 클래스가 Serializable을 구현.
+        2. 직렬화 코드를 직접 구현.
 #### 포함(has-a)
     클래스가 직렬화할 수 없는 객체를 인스턴스 변수로 참조하고 있으면(변수 타입이 아닌 실제 객체의 타입에 의해 결정됨)
     - 직렬화 불가(NotSerializableException)
     - 직렬화 불가한 인스턴스 변수에는 transient를 붙여 제외하고 직렬화 가능
+
+### transient
+- transient는 Serialize하는 과정에 제외하고 싶은 경우 선언하는 키워드
+- 패스워드와 같은 보안정보가 직렬화(Serialize) 과정에서 제외하고 싶은 경우에 적용
+- 다양한 이유로 데이터를 전송을 하고 싶지 않을 때 선언
+- @Transient 는 JPA에서 필드를 DB에 저장하지 않도록 해줌.
+```java
+public class Member implements Serializable {
     
+   private String name;
+   private transient String password;  
+}
+```
+    - 출력시 transient 변수는 null 값 출력

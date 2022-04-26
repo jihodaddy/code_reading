@@ -6,4 +6,4 @@
     - 메서드에서의 변수(지역변수) : 초기화 안하면 에러 발생
   
 ### json 데이터 추출시 오류(오류메세지: java.util.LinkedHashMap cannot be cast to List..)
-  - 역직력화 할 클래스에 대한 정보가 충분하지 않은 경우 LinkedHashMap 
+    - 역직력화 할 클래스에 대한 정보가 충분하지 않은 경우 LinkedHashMap 
